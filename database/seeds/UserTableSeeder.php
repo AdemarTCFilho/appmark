@@ -19,7 +19,7 @@ class UserTableSeeder extends Seeder
             'password' => bcrypt(123456),
             'remember_token' => str_random(10),
         ]);
-
+        //Metodo para criar um login admin
         factory(User::class)->create([
             'name' => 'Admin',
             'email' => 'admin@user.com',
