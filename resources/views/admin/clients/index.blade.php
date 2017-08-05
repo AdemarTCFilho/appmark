@@ -11,6 +11,8 @@
             <tr>
                 <th>ID</th>
                 <th>Nome</th>
+                <th>Email</th>
+                <th>Telefone</th>
                 <th>Ação</th>
             </tr>
             </thead>
@@ -20,6 +22,8 @@
             <tr>
                 <td>{{ $client->id }}</td>
                 <td>{{ $client->user->name }}</td>
+                <td>{{ $client->user->email }}</td>
+                <td>{{ $client->phone }}</td>
                 <td>
                     <a href="{{route('admin.clients.edit', ['id'=>$client->id])}}" class="btn btn-default btn-sm">Editar</a>
                 </td>
